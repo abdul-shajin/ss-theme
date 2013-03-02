@@ -1,8 +1,27 @@
+<!--
 <nav class="columns sixteen">
   <ul id="main-nav-bar" class="inline" data-hook>
-    <% get_taxonomies.each do |taxonomy| %>
-      <li id="spree-<%= taxonomy.name%>-link" data-hook><%= link_to taxonomy.name %></li>
-    <% end %> 
+    <%# get_taxonomies.each do |taxonomy| %>
+      <li id="spree-<%#= taxonomy.name%>-link" data-hook><%#= link_to taxonomy.name %></li>
+    <%# end %> 
     <li id="link-to-cart" data-hook><%= link_to_cart %></li>
   </ul>
-</nav>
+</nav> 
+-->
+
+<!-- integration starts here -->
+<nav class="columns sixteen">
+  <ul id="main-nav-bar" class="inline" data-hook>
+    <div class="container-fluid nav_bg">
+        <div class="container">
+            <div class="row">
+                <ul id="navigation">
+                <% get_taxonomies.each do |taxonomy| %>
+                    <li><a id="spree_<%= taxonomy.name%>_menu" class='nav_a_bg_color' href='#'><%= taxonomy.name %></li>
+                <% end %>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </ul>
+  </nav>
