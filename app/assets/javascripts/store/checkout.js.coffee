@@ -1,3 +1,4 @@
+#file - checkout js coffee (integrated theme)
 @disableSaveOnClick = ->
   ($ 'form.edit_order').submit ->
     ($ this).find(':submit, :image').attr('disabled', true).removeClass('primary').addClass 'disabled'
@@ -77,3 +78,5 @@ $ ->
     # Activate already checked payment method if form is re-rendered
     # i.e. if user enters invalid data
     ($ 'input[type="radio"]:checked').click()
+
+#file - checkout js coffee (integrated theme) - end

@@ -15,9 +15,69 @@
     <div class="container-fluid nav_bg">
         <div class="container">
             <div class="row">
-                <ul id="navigation">
+                <ul id="navigation" class=''>
                 <% get_taxonomies.each do |taxonomy| %>
-                    <li><a id="spree_<%= taxonomy.name%>_menu" class='nav_a_bg_color' href='#'><%= taxonomy.name %></li>
+                    <li><a id="spree_<%= taxonomy.name%>_menu" class='nav_a_bg_color' href='#'><%= taxonomy.name %></a>
+                      <ul id="helpdesk_support_drop_page">
+                                <div id="menu-first-clmn" class="pull-left">
+                                    <a href="#">
+                                      <%= image_tag 'store/ss_theme/helpdesk.png', alt: 'helpdesk', id: 'main-img' %>
+                                    </a>
+                                    <a href="#"><h3 class="main-head">Helpdesk</h3></a>
+                                    <a href="#"><h3 id="support-h">Support</h3></a>
+                                    <a href="#">
+                                      <%= image_tag 'store/ss_theme/order_now.png', id: 'ordernow' %>
+                                    </a>
+                                    <a href="#">
+                                      <%= image_tag 'store/ss_theme/helpsupport.png', id: 'helpsupport' %>
+                                    </a>
+                                    <div id="menu-media">
+                                        <a href="#"><%= image_tag 'store/ss_theme/twitter.png' %></a>
+                                        <a href="#"><%= image_tag 'store/ss_theme/facebook.png' %></a>
+                                        <a href="#"><%= image_tag 'store/ss_theme/in.png', alt: 'Linkedin' %></a>
+                                        <a href="#"><%= image_tag 'store/ss_theme/google_plus.jpg' %></a>
+                                    </div>
+                                </div>
+                                <div id="team_plans_clm" class="pull-left">
+                                    <a href="#">
+                                      <%= image_tag 'store/ss_theme/live_chat_ph_icon.png', id: 'menu_icon' %></a>
+                                    <a href="#"><p id="team_plans_b">TEAM PLANS</p></a>
+                                    <a href="#"><p class="font_size" id="dedicated_h">Dedicated</p></a>
+                                    <a href="#"><p class="font_size" id="semi_dedicated_h">Semi dedicated</p></a>
+                                    <a href="#"><p class="font_size" id="shared_h">Shared</p></a>
+                                </div>    
+                                <div id="team_plans_clm" class="pull-left">
+                                    <a href="#">
+                                      <%= image_tag 'store/ss_theme/team_plans_icon.png', id: 'menu_icon' %></a>
+                                    <a href="#"><p id="team_plans_b">LIVE CHAT/PHONE</p></a>
+                                    <a href="#"><p class="font_size" id="dedicated_h">8 hours a day</p></a>
+                                    <a href="#"><p class="font_size" id="semi_dedicated_h">12 hours a day</p></a>
+                                    <a href="#"><p class="font_size" id="shared_h">Dedicated</p></a>
+                                </div>
+                                <div id="team_plans_clm" class="pull-left">
+                                    <a href="#"><%= image_tag 'store/ss_theme/time_bound_icon.png', id: 'menu_icon' %></a>
+                                    <a href="#"><p id="team_plans_b">TIME BOUND</p></a>
+                                    <a href="#"><p class="font_size" id="dedicated_h">24 x 7 x 365</p></a>
+                                    <a href="#"><p class="font_size" id="semi_dedicated_h">12 x 7 x 365</p></a>
+                                    <a href="#"><p class="font_size" id="shared_h">8 x 7 x 365</p></a>
+                                    <a href="#"><p class="font_size" id="shared_h">5 days per week</p></a>
+                                    <a href="#"><p class="font_size" id="shared_h">Holiday plans</p></a>
+                                    <a href="#"><p class="font_size" id="shared_h">Weekend plans</p></a>
+                                    <a href="#"><p class="font_size" id="shared_h">Get a custom plans</p></a>
+                                </div>
+                                <div id="technology_clm" class="pull-left">
+                                    <a href="#"><%= image_tag 'store/ss_theme/technologies.png', id: "menu_icon" %></a>
+                                    <a href="#"><p id="technology_b">TECHNOLOGIES</p></a>
+                                    <a href="#"><p class="font_size" id="control_panels">Control panels</p></a>
+                                    <a href="#"><p class="tech_color_left" id="whm_cPanel">WHM / cPanel</p></a>
+                                    <a href="#"><p class="tech_color_left" id="parallels_plesk">Parallels Plesk</p></a>
+                                    <a href="#"><p class="tech_color_left" id="direct_admin">Direct Admin</p></a>
+                                    <a href="#"><p class="tech_color_left" id="webmin">Webmin</p></a>
+                                    <a href="#"><p class="tech_color_left" id="interworx">Interworx</p></a>
+                                    <a href="#"><p class="font_size" id="cloudcomputing">CLOUD COMPUTING</p></a>
+                                </div>
+                            </ul>
+                    </li>
                 <% end %>
                 </ul>
             </div>

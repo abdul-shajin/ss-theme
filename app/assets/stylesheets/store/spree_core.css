@@ -3,4 +3,7 @@
  *= require normalize
  *= require skeleton
  *= require store/screen
+ *= require store/ss_theme/bootstrap
+ *= require store/ss_theme/styles
+ *= require store/ss_theme/navigation
 */

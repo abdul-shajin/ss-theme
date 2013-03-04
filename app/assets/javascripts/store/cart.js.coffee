@@ -1,3 +1,4 @@
+# file - cart js coffee (integrated theme)
 $ ->
   if ($ 'form#update-cart').is('*')
     ($ 'form#update-cart a.delete').show().one 'click', ->
@@ -7,3 +8,5 @@ $ ->
 
   ($ 'form#update-cart').submit ->
     ($ 'form#update-cart #update-button').attr('disabled', true)
+
+# file - cart js coffee (integrated theme) -end

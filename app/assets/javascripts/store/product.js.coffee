@@ -1,3 +1,4 @@
+# file - product js coffee (theme)
 add_image_handlers = ->
   thumbnails = ($ '#product-images ul.thumbnails')
   ($ '#main-image').data 'selectedThumb', ($ '#main-image img').attr('src')
@@ -40,3 +41,4 @@ $ ->
   ($ '#product-variants input[type="radio"]').click (event) ->
     show_variant_images @value
     update_variant_price ($ this)
+# file - product js coffee (theme) - end

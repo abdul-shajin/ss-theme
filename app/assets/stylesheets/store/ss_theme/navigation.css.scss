@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#navigation {
+  /*margin-left:50px;*/
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 100%;
+  padding: 0px;
+  li {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    position: relative;
+    list-style: none;
+  }
+  #home_menu {
+    color: #FFFFFF;
+    display: block;
+    font-size: 22px;
+    margin: 2px 0 0;
+    padding: 12px 24px;
+    text-decoration: none;
+  }
+  #helpdesk_support_menu {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    margin-top: 2px;
+    padding: 14px 10px;
+  }
+  #server_management_menu, #hire_a_sage_menu, #focus_areas_menu {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    margin-top: 2px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #corporate_menu {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0;
+    margin-top: 2px;
+  }
+  #helpdesk_support_menu:hover {
+    background: image-url("store/ss_theme/nav_a_arrow.png") no-repeat center bottom;
+  }
+  li .nav_a_bg_color:hover {
+    background: #015d9a !important;
+  }
+  ul {
+    margin-top: 0px;
+    background: image-url("store/ss_theme/nav_a_bg.jpg");
+    position: absolute;
+    display: none;
+    padding: 0;
+    width: 925px;
+    margin-left: -100px;
+    z-index: 999;
+    border-bottom: 4px solid #414242;
+    border-top: 2px solid #f7f7f7;
+    height: 330px;
+  }
+  li:hover > ul {
+    display: block;
+  }
+  ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  #server_management_drop_page {
+    background: image-url("store/ss_theme/nav_a_bg.jpg") repeat scroll 0 0 transparent;
+    display: none;
+    height: 330px;
+    margin-left: -273px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    width: 925px;
+    z-index: 999;
+    a {
+      text-decoration: none;
+    }
+  }
+  li:hover > #server_management_drop_page {
+    display: block;
+  }
+  #server_management_drop_page li {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  #hire_a_sage_drop_page {
+    background: image-url("store/ss_theme/nav_a_bg.jpg") repeat scroll 0 0 transparent;
+    border-top: 2px solid #F7F7F7;
+    display: none;
+    height: 330px;
+    margin-left: -493px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    width: 925px;
+    z-index: 999;
+    a {
+      text-decoration: none;
+    }
+  }
+  #helpdesk_support_drop_page a {
+    text-decoration: none;
+  }
+  li:hover > #hire_a_sage_drop_page {
+    display: block;
+  }
+  #hire_a_sage_drop_page li {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  #focus_areas_drop_page {
+    background: image-url("store/ss_theme/nav_a_bg.jpg") repeat scroll 0 0 transparent;
+    display: none;
+    height: 330px;
+    margin-left: -640px;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    width: 925px;
+    z-index: 999;
+    a {
+      text-decoration: none;
+    }
+  }
+  li:hover > #focus_areas_drop_page {
+    display: block;
+  }
+  #focus_areas_drop_page li {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  #corporate_drop_page {
+    margin-top: 0px;
+    background: image-url("store/ss_theme/nav_a_bg.jpg");
+    position: absolute;
+    display: none;
+    padding: 0;
+    width: 925px;
+    margin-left: -794px;
+    z-index: 999;
+    height: 330px;
+    a {
+      text-decoration: none;
+    }
+  }
+  li:hover > #corporate_drop_page {
+    display: block;
+  }
+  #corporate_drop_page li {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+/*.arrow
+{
+	background:url(../images/nav_a_arrow.png) no-repeat center;
+	height:16px;
+	z-index:999;
+}
+
+*/
+
+html[xmlns] #nav {
+  display: block;
+}
+
+* html #nav {
+  height: 1%;
+}
+
+.nav_bg {
+  background: image-url("store/ss_theme/nav_bg.jpg");
+  height: 46px;
+}
