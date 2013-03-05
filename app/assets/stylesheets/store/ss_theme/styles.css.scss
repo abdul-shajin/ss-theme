@@ -172,6 +172,7 @@ body {
   width: 150px;
   a {
     text-decoration: none;
+    padding: 0 !important;
     &:hover {
       background: none !important;
     }
@@ -232,6 +233,7 @@ body {
 #menu_icon {
   margin-left: 72px;
   margin-top: 14px;
+  margin-bottom: 15px;
 }
 
 #team_plans_b {
@@ -244,8 +246,9 @@ body {
 
 .font_size {
   color: #4C4D4E;
-  font-size: 16px;
+  font-size: 16px !important;
   margin-left: 40px !important;
+  font-weight: normal;
 }
 
 .tech_color_left {
@@ -1785,4 +1788,21 @@ body {
 .common_footer_bg {
   background: url(store/ss_theme/footer_bg.jpg);
   height: 82px;
+}
+
+
+nav #main-nav-bar {
+    font-weight: bold;
+    text-transform: none !important;
+}
+
+#team_plans_clm a  p{
+    /* here  */
+    margin-top: -10px !important;
+
+}
+
+.tech_icon {
+  margin-bottom: 0;
+  
 }

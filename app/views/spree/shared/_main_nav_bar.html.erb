@@ -17,27 +17,9 @@
             <div class="row">
                 <ul id="navigation" class=''>
                 <% get_taxonomies.each do |taxonomy| %>
-                    <li><a id="spree_<%= taxonomy.name%>_menu" class='nav_a_bg_color' href='#'><%= taxonomy.name %></a>
+                    <li><a id="spree_<%= taxonomy.name %>_menu" class='nav_a_bg_color' href='#'><%= taxonomy.name %></a>
                       <ul id="helpdesk_support_drop_page">
-                                <div id="menu-first-clmn" class="pull-left">
-                                    <a href="#">
-                                      <%= image_tag 'store/ss_theme/helpdesk.png', alt: 'helpdesk', id: 'main-img' %>
-                                    </a>
-                                    <a href="#"><h3 class="main-head">Helpdesk</h3></a>
-                                    <a href="#"><h3 id="support-h">Support</h3></a>
-                                    <a href="#">
-                                      <%= image_tag 'store/ss_theme/order_now.png', id: 'ordernow' %>
-                                    </a>
-                                    <a href="#">
-                                      <%= image_tag 'store/ss_theme/helpsupport.png', id: 'helpsupport' %>
-                                    </a>
-                                    <div id="menu-media">
-                                        <a href="#"><%= image_tag 'store/ss_theme/twitter.png' %></a>
-                                        <a href="#"><%= image_tag 'store/ss_theme/facebook.png' %></a>
-                                        <a href="#"><%= image_tag 'store/ss_theme/in.png', alt: 'Linkedin' %></a>
-                                        <a href="#"><%= image_tag 'store/ss_theme/google_plus.jpg' %></a>
-                                    </div>
-                                </div>
+                                <%= render :partial => 'spree/shared/nav_menu_first_column' ,:locals => {taxonomy: taxonomy } %>
                                 <div id="team_plans_clm" class="pull-left">
                                     <a href="#">
                                       <%= image_tag 'store/ss_theme/live_chat_ph_icon.png', id: 'menu_icon' %></a>
@@ -66,7 +48,7 @@
                                     <a href="#"><p class="font_size" id="shared_h">Get a custom plans</p></a>
                                 </div>
                                 <div id="technology_clm" class="pull-left">
-                                    <a href="#"><%= image_tag 'store/ss_theme/technologies.png', id: "menu_icon" %></a>
+                                    <a href="#"><%= image_tag 'store/ss_theme/technologies.png' , id: 'menu_icon', class: 'tech_icon' %></a>
                                     <a href="#"><p id="technology_b">TECHNOLOGIES</p></a>
                                     <a href="#"><p class="font_size" id="control_panels">Control panels</p></a>
                                     <a href="#"><p class="tech_color_left" id="whm_cPanel">WHM / cPanel</p></a>
